@@ -1,0 +1,42 @@
+全局配置
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+
+git init
+
+git add --all
+git add file.txt
+
+git rm test.txt //删除文件 
+
+git checkout -- test.txt //回退到最近提交或添加
+
+git commit -m "description"
+
+git remote 
+git remote -v	//查看推送远程库
+git remote add origin https://github.com/xxxxxx/xxxxx //关联一个远程库 origin为远程库名字
+git remote rm name
+git remote rename name_before name_after
+
+git push -u origin master   //本地分支的更新,推送到远程主机 远程库空时添加-u master为分支名
+
+git fetch origin <master>   //获取远程更新
+
+git status 
+
+git diff file.txt
+
+git log  //显示从最近到最远的提交日志
+
+git clone 
+
+git branch name //创建名为name的分支
+
+git checkout name //切换到名为name的分支
+
+git merge name //合并指定的名为name的分支到当前分支 git merge origin/master ->远程
+
+git branch -d name //删除分支
+
+git branch -r //查看远程分支
