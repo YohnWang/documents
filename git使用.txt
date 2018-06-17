@@ -9,6 +9,9 @@ git add file.txt
 
 git rm test.txt //删除文件 
 
+git rm --cached test.txt //从版本控制中移除文件 -n可以表示演戏
+
+
 git checkout -- test.txt //回退到最近提交或添加
 
 git commit -m "description"
@@ -28,6 +31,8 @@ git status
 git diff file.txt
 
 git log  //显示从最近到最远的提交日志
+
+git ls-files //列出进入版本控制的文件
 
 git clone 
 
