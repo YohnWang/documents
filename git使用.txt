@@ -22,7 +22,7 @@ git remote add origin https://github.com/xxxxxx/xxxxx //¹ØÁªÒ»¸öÔ¶³Ì¿â originÎªÔ
 git remote rm name
 git remote rename name_before name_after
 
-git push -u origin master   //±¾µØ·ÖÖ§µÄ¸üĞÂ,ÍÆËÍµ½Ô¶³ÌÖ÷»ú Ô¶³Ì¿â¿ÕÊ±Ìí¼Ó-u masterÎª·ÖÖ§Ãû
+git push -u origin master   //±¾µØ·ÖÖ§µÄ¸üĞÂ,ÍÆËÍµ½Ô¶³ÌÖ÷»ú -u¿ÉÒÔÉèÖÃÄ¬ÈÏµÄÍÆËÍÖ÷»ú ÕâÑùÏÂ´Î¿ÉÒÔÖ±½ÓÊ¹ÓÃgit pushÍÆËÍÖÁÄ¬ÈÏµÄÔ¶³ÌÖ÷»ú masterÎª·ÖÖ§Ãû
 
 git fetch origin <master>   //»ñÈ¡Ô¶³Ì¸üĞÂ
 
