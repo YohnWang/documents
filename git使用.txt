@@ -47,3 +47,9 @@ git branch -d name //删除分支
 git branch -r //查看远程分支
 
 git branch -a //列出所有分支
+
+git submodule add https://github.com/xxxxxx/xxxxx //添加一个子模块 之后还需add .gitmodules和子模块的目录 
+
+git submodule init //clone一个有子模块的项目时 第一次需要执行 之后不需要
+
+git submodule update //更新子模块
