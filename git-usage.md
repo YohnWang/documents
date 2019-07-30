@@ -13,13 +13,13 @@ git config --local user.email "email@example.com"
 
 //定义当前仓库所有提交使用的作者姓名和邮箱
 
-## 初始化
+# 初始化
 git init //将当前目录创建成一个git仓库
 git init <dir-name> //指定目录创建成git仓库 例如 git init test-dir
 
 
 
-## 添删文件
+# 添删文件
 
 git add --all //将所有修改添加到暂存区
 git add file.txt //将指定文件添加到暂存区
@@ -36,7 +36,7 @@ git checkout <commit> //回退到指定的commit
 
 git commit -m "description"
 
-## 远程仓库
+# 远程仓库
 
 git remote 
 git remote -v	//查看推送远程库
@@ -48,7 +48,7 @@ git push -u origin master   //本地分支的更新,推送到远程主机 -u可以设置默认的推送
 
 git fetch origin <master>   //获取远程更新 fetch之后不会直接修改本地数据 需要合并 即执行git merge origin/master
 
-## 仓库状态
+# 仓库状态
 
 git status 
 
@@ -64,11 +64,11 @@ git log --stat //显示详细信息
 
 git ls-files //列出进入版本控制的文件
 
-## 克隆远程仓库
+# 克隆远程仓库
 git clone <repo> //将指定的远程仓库克隆到当前目录
 git clone <repo> <dir> //将指定的远程仓库克隆到指定目录
 
-## 分支
+# 分支
 
 git branch name //创建名为name的分支
 
@@ -84,11 +84,29 @@ git branch -a //列出所有分支
 
 
 
-## 回滚
+## git分支模型
 
-git revert <commit> //恢复成指定的commit分支，注意仍然保留上一次的commit
+git有一个HEAD指针，用于指向当前工作的分支。
 
-git reset //TODO
+例如现在的工作分支为master，那么HEAD就指向master。
+
+git branch 创建分支时实际上是从当前commit状态派生出一个新的状态的节点，但他的分支名改变。
+
+
+
+# 回滚
+
+git revert <commit> //恢复成指定的commit分支，注意仍然保留上一次的commit（即生成新的节点）
+
+git reset <commit> //将HEAD指针指向指定的commit，后序的节点将会被删除，工作目录不变
+
+git reset --hard <commit>  //同git reset <commit>，并修改工作目录
+
+git reset  //将暂存区的内容更变为上一次的commit状态，工作目录不变
+
+git reset --hard //同git reset 并修改工作目录
+
+git reset <file> //撤销add的文件
 
 git submodule add https://github.com/xxxxxx/xxxxx //添加一个子模块 之后还需add .gitmodules和子模块的目录 
 
