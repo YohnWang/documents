@@ -1,4 +1,13 @@
+# gitÄ£ĞÍ
+
+![image1](resource/git-usage/1.png)
+
+gitµÄ¹¤×÷Ä£ĞÍ¿É·ÖÎª¹¤×÷Çø¡¢Ôİ´æÇø¡¢±¾µØ²Ö¿â¡¢Ô¶³Ì²Ö¿â
+
+
+
 # ÅäÖÃ
+
 ## È«¾ÖÅäÖÃ
 git config --global user.name "Your Name"
 git config --global user.email "email@example.com"
@@ -36,6 +45,8 @@ git checkout <commit> //»ØÍËµ½Ö¸¶¨µÄcommit
 
 git commit -m "description"
 
+git commit --amend //¸ü¸ÄÒ»´ÎÌá½»£¬Ô¶Ìá½»¸ÄÎªĞÂµÄÌá½»
+
 # Ô¶³Ì²Ö¿â
 
 git remote 
@@ -53,6 +64,8 @@ git fetch origin <master>   //»ñÈ¡Ô¶³Ì¸üĞÂ fetchÖ®ºó²»»áÖ±½ÓĞŞ¸Ä±¾µØÊı¾İ ĞèÒªºÏ²
 git status 
 
 git diff file.txt
+
+![diff](resource/git-usage/diff.png)
 
 git log  //ÏÔÊ¾´Ó×î½üµ½×îÔ¶µÄÌá½»ÈÕÖ¾
 
